@@ -23,7 +23,7 @@ const Quill = ({ args }: QuillProps) => {
   const handleChange = (content: string, delta: any, source: any, editor: any) => {
     clearTimeout(timeout)
     timeout = setTimeout(() => {
-      Streamlit.setComponentValue(args.html ? content : editor.getText())
+      // Streamlit.setComponentValue(args.html ? content : editor.getText())
     }, 200)
   }
 
