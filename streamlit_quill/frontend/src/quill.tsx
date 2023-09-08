@@ -20,12 +20,12 @@ const Quill = ({ args }: QuillProps) => {
 
   let timeout: NodeJS.Timeout
 
-  const handleChange = (content: string, delta: any, source: any, editor: any) => {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => {
-      // Streamlit.setComponentValue(args.html ? content : editor.getText())
-    }, 200)
-  }
+  // const handleChange = (content: string, delta: any, source: any, editor: any) => {
+  //   clearTimeout(timeout)
+  //   timeout = setTimeout(() => {
+  //     // Streamlit.setComponentValue(args.html ? content : editor.getText())
+  //   }, 200)
+  // }
 
   useEffect(() => {
     Streamlit.setFrameHeight()
@@ -52,7 +52,7 @@ const Quill = ({ args }: QuillProps) => {
       placeholder={args.placeholder}
       preserveWhitespace={args.preserveWhitespace}
       readOnly={args.readOnly}
-      onChange={handleChange}
+      // onChange={handleChange}
     />
   </div>
 }

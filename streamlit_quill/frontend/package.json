@@ -17,8 +17,7 @@
     "react-quill": "^2.0.0-beta.2",
     "react-scripts": "3.4.1",
     "resize-observer-polyfill": "^1.5.1",
-    "streamlit-component-lib": "^1.1.1",
-    "typescript": "~3.7.2"
+    "streamlit-component-lib": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
